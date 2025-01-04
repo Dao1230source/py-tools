@@ -1,0 +1,16 @@
+{
+  "desc": "并发接收asn请求",
+  "before": [
+    {
+      "url": "groupSkuSelect",
+      "inputs": [
+        {"skuNo": "430100100117"},
+        {"skuNo": "430100100118"},
+        {"skuNo": "430100100119"}
+      ],
+      "predicate": "'$.content.TD00001[2].skuNo' == '430100100119'"
+    }
+  ],
+  "test": [],
+  "after": []
+}
